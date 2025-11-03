@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { GithubUser, ProjectType } from "../types";
+import { ProjectType } from "../types";
 import ScrollingText from "./ScrollingText";
 import List from "./UI/List";
 import Banner from "./UI/Banner";

@@ -27,6 +27,7 @@ export default function NumberTicker({
   const isInView = useInView(ref, { once: true, margin: "0px" });
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     isInView &&
       setTimeout(() => {
         motionValue.set(direction === "down" ? 0 : value);
@@ -49,7 +50,7 @@ export default function NumberTicker({
   return (
     <span
       className={cn(
-        "inline-block tabular-nums text-black dark:text-white tracking-wider",
+        "inline-block tabular-nums tracking-wider text-black dark:text-white",
         className,
       )}
       ref={ref}

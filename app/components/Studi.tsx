@@ -1,13 +1,10 @@
 import { FC } from "react";
 import ScrollingText from "./ScrollingText";
 import Banner from "./UI/Banner";
-import { GithubUser, StudiType } from "../types";
+import { StudiType } from "../types";
 import List from "./UI/List";
 
-const Studi: FC<{ studies: StudiType[]; user: GithubUser }> = ({
-  studies,
-  user,
-}) => {
+const Studi: FC<{ studies: StudiType[] }> = ({ studies }) => {
   return (
     <>
       <section className="flex h-screen w-screen flex-col justify-between bg-white">

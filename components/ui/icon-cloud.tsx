@@ -52,7 +52,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
       href: undefined,
       target: undefined,
       rel: undefined,
-      onClick: (e: any) => e.preventDefault(),
+      onClick: (e: any) => e.preventDefault(), // eslint-disable-line @typescript-eslint/no-explicit-any
     },
   });
 };
@@ -80,7 +80,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
   }, [data, theme]);
 
   return (
-    // @ts-ignore
+    // @ts-expect-error TS ne comprend pas correctement Cloud
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>

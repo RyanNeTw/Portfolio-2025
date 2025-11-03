@@ -1,6 +1,5 @@
 import { FC } from "react";
 import Glassmorphism from "./Glassmorphism";
-import Sentence from "./Sentence";
 
 type IProps = {
   reactElement: React.ReactNode;

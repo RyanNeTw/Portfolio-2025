@@ -52,7 +52,7 @@ export default function Home() {
       children: <Languages />,
     },
     {
-      children: <Studi studies={informations?.studies ?? []} user={user} />,
+      children: <Studi studies={informations?.studies ?? []} />,
     },
     {
       children: <Footer user={user} socials={informations.socials ?? []} />,
@@ -61,19 +61,15 @@ export default function Home() {
 
   return (
     <>
-      <HorizontalScroll
-        children={
-          <>
-            <section className="flex flex-row">
-              {pages?.map((page, index) => (
-                <div key={index} className="h-screen w-screen flex-shrink-0">
-                  {page.children}
-                </div>
-              ))}
-            </section>
-          </>
-        }
-      />
+      <HorizontalScroll>
+        <section className="flex flex-row">
+          {pages?.map((page, index) => (
+            <div key={index} className="h-screen w-screen flex-shrink-0">
+              {page.children}
+            </div>
+          ))}
+        </section>
+      </HorizontalScroll>
     </>
   );
 }

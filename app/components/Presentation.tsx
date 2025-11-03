@@ -1,13 +1,10 @@
 import { FC, ReactElement } from "react";
 import { GithubUser, SociaType } from "../types";
-import Badge from "./UI/Badge";
 import Carousel from "./Carousel";
-import Sentence from "./UI/Sentence";
 import NumberTicker from "@/components/ui/number-ticker";
 import SparklesText from "@/components/ui/sparkles-text";
 import BoxReveal from "@/components/ui/box-reveal";
 import Label from "./UI/Label";
-import Paragraph from "./UI/Paragraph";
 import Header from "./Header";
 
 const Presentation: FC<{ user: GithubUser; socials: SociaType[] }> = ({

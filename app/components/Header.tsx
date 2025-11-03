@@ -1,8 +1,6 @@
 import { FC } from "react";
 import { GithubUser, SociaType } from "../types";
 import Socials from "./Socials";
-import { Image, Link } from "@nextui-org/react";
-import Glassmorphism from "./UI/Glassmorphism";
 import ImageContent from "./UI/ImageContent";
 
 const Header: FC<{ user: GithubUser; socials: SociaType[] }> = ({

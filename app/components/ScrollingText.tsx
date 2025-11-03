@@ -1,5 +1,4 @@
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
-import { motion } from "framer-motion";
 import { FC } from "react";
 
 const ScrollingText: FC<{

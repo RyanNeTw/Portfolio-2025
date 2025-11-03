@@ -1,7 +1,7 @@
 import { FC } from "react";
 import ScrollingText from "./ScrollingText";
 import List from "./UI/List";
-import { ExperienceType, GithubUser } from "../types";
+import { ExperienceType } from "../types";
 import Banner from "./UI/Banner";
 
 const Experience: FC<{ experiences: ExperienceType[] }> = ({ experiences }) => {

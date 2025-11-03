@@ -1,7 +1,7 @@
 import supabase from "@/app/supabase";
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+export async function GET() {
   const { data: experiences, error: experiencesError } = await supabase
     .from("experiences")
     .select("*");

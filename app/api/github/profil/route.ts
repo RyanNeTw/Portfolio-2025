@@ -1,7 +1,7 @@
 import octokit from "@/app/octokit";
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+export async function GET() {
   const user = await octokit.request("GET /user", {
     headers: {
       "X-GitHub-Api-Version": "2022-11-28",
